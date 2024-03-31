@@ -1,5 +1,4 @@
 ## SOLID
-Claro, aquí te dejo el concepto de SOLID:
 
 SOLID es un acrónimo que representa cinco principios fundamentales de la programación orientada a objetos y el diseño de clases, que ayudan a gestionar las dependencias entre clases:
 
