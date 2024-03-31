@@ -4,20 +4,19 @@
   
   //EX - 1
   
-  function calculateOperation1(a: number, b: number, c: number): number {
+  // Las dos funciones hacen exactamente lo mismo, por lo que
+  // podemos tener una sola función.
+  function calculateOperation(a: number, b: number, c: number): number {
     let sumResult = a + b;
     let multiplicationResult = sumResult * c;
     return multiplicationResult;
   }
 
-  function calculateOperation2(x: number, y: number, z: number): number {
-    let sumResult = x + y;
-    let multiplicationResult = sumResult * z;
-    return multiplicationResult;
-  }
-
   // EX - 2
-  function calculateRectangleArea(length: number, width: number): number {
+   // ambas funciones estan bien por que  cada una realiza una
+   // operación matemática diferente.
+
+   function calculateRectangleArea(length: number, width: number): number {
     return length * width;
   }
 
@@ -26,15 +25,12 @@
   }
 
   // EX - 3
-  //No es necesario aumentar codigo en este ejercicio
-  function validateEmail(email: string): boolean {
-    //...some code for validate here
-    return false;
-  }
-
-  function validateUsername(username: string): boolean {
-    //...some code for validate here
-    return false;
-  }
+ // La validación que se realiza en ambas funciones es la misma, 
+ //se puede tener entonces una sola función que valide una cadena de texto.
+ 
+ function validateString(str: string): boolean {
+  //...some code for validate here
+  return false;
 
 })();
+

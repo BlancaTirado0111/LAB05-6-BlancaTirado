@@ -1,78 +1,69 @@
 (() => {
 
-  /* NOMBRE CORRECTAMETE LAS SIGUIENTES VARIABLES 
-     ADEMAS DE COMPROBAR SI USA LET O CONST,
-    SE PUEDE REFACTORIZAR, ETC.
-  */
-
-  //lista de emails de usuarios de Meta-X
-  const l: Array<string> = [
+  // Lista de emails de usuarios de Meta-X
+  const userEmails: string[] = [
     "email1@gmail.com", 
-    "email1@gmail.com", 
-    "email1@gmail.com"
+    "email2@gmail.com", 
+    "email3@gmail.com"
   ];
 
-  console.log(l);
+  console.log(userEmails);
 
-  //Lista de compras de un carrito
-  const var2: Array<Object> = [
+  // Lista de compras de un carrito
+  const shoppingCart: {product: string}[] = [
     {product: "switch"},
     {product: "X-box Controller"},
     {product: "steam-gift-card"},
   ];
 
-  console.log(var2);
+  console.log(shoppingCart);
   
 
-  //funcion para sumar mas 3 a un numero y retornarlo
-  const fff = (asdfg: number): number => {
-    return asdfg + 3;
+  // Función para sumar 3 a un número y retornarlo
+  const addThree = (num: number): number => num + 3;
+
+  console.log(addThree(2));
+  
+  
+  // Función para capitalizar una palabra pasada por parámetros
+  const capitalize = (word: string): string => {
+    const lowerCaseWord = word.toLowerCase();    
+    const capitalizedWord = lowerCaseWord.charAt(0).toUpperCase() + lowerCaseWord.slice(1);
+    return capitalizedWord;
   }
 
-  console.log(fff(2));
+  console.log(capitalize("capricorn"));
   
-  
-  //funcion para capitalizar una palabra pasara por params
-  //idente o refactorice de ser necesario
-  //el resultado no deberia cambiar
-  function capi(w: string): string {
-    w.toLowerCase();    
-    const c = w.charAt(0).toUpperCase().toString().concat(w.substring(1, w.length));
-    return c;
-  }
+  // Variable que alerta en caso de que algún evento suceda
+  const isEventTriggered: boolean = false;
 
-  console.log(capi("capricorn"));
-  
-  //variable que alerta en caso de que algun evento suceda
-  let www: boolean = false;
+  if(isEventTriggered) console.log('event');
 
-  if(www) console.log('event');
+  // Variable que se encarga de verificar si un usuario puede acceder o no
+  const canAccess: boolean = true;
 
-  //variable que se encarga de verificar 
-  //si un usuario puede acceder o no
-  let c: boolean = true;
-
-  if(c) console.log('welcome');
+  if(canAccess) console.log('welcome');
   
 
-  //variable para hallar el promedio de 3 numeros
-  const sudo: number = (1 + 2 + 3) / 3;
+  // Variable para hallar el promedio de 3 números
+  const average: number = (1 + 2 + 3) / 3;
 
-  console.log(sudo);
+  console.log(average);
   
-  //variable que almacena el valor de PI
-  let pizza: number = 3.141592654;
+  // Variable que almacena el valor de PI
+  const pi: number = 3.141592654;
 
-  console.log(pizza);
+  console.log(pi);
   
 
-  //variabel que controla si un archivo es modificable 
-  let Bv: boolean = false;
+  // Variable que controla si un archivo es modificable 
+  const isFileEditable: boolean = false;
 
-  if(Bv) console.log('edit this file?');
+  if(isFileEditable) console.log('edit this file?');
   
-  //variable para almacenar el valor de e
-  const eioua: number = 2.718281828; 
+  // Variable para almacenar el valor de e
+  const e: number = 2.718281828; 
 
+  console.log(e);
 
 })();
